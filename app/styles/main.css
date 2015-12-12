@@ -128,10 +128,12 @@ body {
 }
 
 .photo .delete{
-  margin: 0;
-  margin-left: -17px;
   font-size: 16px;
   display:none;
+  position: relative !important;
+  top: -135px !important;
+  left: -16px !important;
+  margin: 0 !important;
 }
 
 #photos{
@@ -140,14 +142,17 @@ body {
 }
 
 #photos .photo{
-  display: inline-block;
-  padding:5px;
-  vertical-align: top;
-  box-shadow: 1px 1px 1px 1px #ccc;
-  margin: 5px;
+    display: inline-block;
+    padding: 5px;
+    vertical-align: top;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    margin: 5px;
+    min-width: 300px;
+    min-height: 300px;
+    background-size: contain;
 }
-#photos img{
-  width: 150px;
+.photo_img{
+  width: 300px;
 }
 .photo .title{
   font-size:15px;
@@ -162,8 +167,16 @@ body {
   height:150px;
 }
 
+.sticker_top{
+  width:150px;
+}
+
 #stickers img:first-child{
   margin-top:5px;
+}
+
+.sticker_img{
+  width:150px;
 }
 
 #stickers li{
