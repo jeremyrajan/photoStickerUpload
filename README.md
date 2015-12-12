@@ -7,6 +7,24 @@ version 0.14.0.
 
 Run `grunt` for building and `grunt serve` for preview.
 
-## Testing
+## Demo
+Demo [here](http://jeremyrajan.com/photoStickerdemo/#/)
 
-Running `grunt test` will run the unit tests with karma.
+## Dependencies
+* AngularJS
+* Materialize UI
+* JqueryUI
+* FontAwesome
+
+
+##Features
+* Photo Upload using Data-URI & FileReader
+* Drag & Drop
+* Validation for Inputs
+* Sticker Reset
+* Delete Stickers
+
+###@TODO
+* Integrate LocalStorage
+* Repositioning & Resizing
+
