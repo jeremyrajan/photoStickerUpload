@@ -1,0 +1,69 @@
+<div class="row">
+	<div class="col s10" id="photo_area">
+		<h5>Photo Area<h5>
+		<div id="cx">
+			<span class="hint--bottom left" data-hint="Start Over"><a id="start_over" href="javascript:void(0);" ng-click="startOver()" class="btn-floating red disabled"><i class="fa fa-undo"></i></a></span>
+			<div id="upload_form_pa" class="left">
+				<form action="#">
+					<div class="file-field input-field">
+					<div class="btn">
+						<span>Image</span>
+						<input type="file" accept='image/*' custom-on-change="uploadPhoto"> 
+					</div>
+					<div class="file-path-wrapper">
+						<input class="file-path validate" type="text" placeholder="Upload Image">
+					</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<!--displays photos here-->
+		<div id="photos" class="droppable"></div>
+		<!-- end -->
+	</div>
+	<div class="col s2" id="sticker_area">
+		<div>
+			<h5 class="left">Sticker Area</h5>
+			<span id="upload_sticker_btn" class="hint--left left" data-hint="Upload new Sticker"><a href="#upload_sticker" class="btn-floating modal-trigger"><i class="fa fa-plus"></i></a></span>
+		</div>
+		<!--displays stickers here-->
+		<br/>
+		<ul id="stickers"></ul>
+		<!-- end -->
+	<div class="clearfix"></div>
+</div>
+
+<!-- Modal Structure -->
+<div id="upload_sticker" class="modal">
+	<div class="modal-content">
+		<h4>Upload Sticker</h4>
+		<!-- sticker file -->
+		<div id="upload_form_st" class="left">
+			<form action="#">
+				<div class="file-field input-field">
+					<div class="btn">
+						<span>Image</span>
+						<input type="file" accept='image/*' custom-on-change="validate">
+					</div>
+					<div class="file-path-wrapper">
+						<input class="file-path validate" type="text" placeholder="Upload Image">
+						<div class="error"></div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+				<input id="sticker_title" type="text" class="validate" custom-on-change="validate">
+				<div class="error"></div>
+				<label for="sticker_title">Sticker Title</label>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a class="waves-effect waves-green btn disabled" id="btn-sticker" ng-click="uploadSticker()">Upload</a>
+	</div>
+	<!-- modal-action modal-close -->
+</div>
+</div>

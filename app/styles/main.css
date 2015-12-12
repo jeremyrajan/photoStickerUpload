@@ -1,0 +1,179 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+/*custom css*/
+#toast-container{
+   top: inherit !important;
+   bottom: 0 !important;
+}
+
+.modal{
+  overflow: hidden;
+}
+
+.file-field .btn{
+  font-size: 12px;
+  padding: 10px;
+  height: auto !important;
+  line-height: 12px;
+  background: blueviolet;
+}
+
+.delete{
+  position: absolute;
+  margin-top: -193px;
+  margin-left: 135px;
+  cursor: pointer;
+  display:none;
+}
+
+.error{
+    background: red;
+    color: white;
+    margin-top: -15px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+/*photo area*/
+#photo_area{
+  border-right:1px solid #333;
+}
+
+#upload_form_pa{
+  margin: -13px 0px 0px 10px;
+  width:90%;
+}
+
+.photo .delete{
+  margin: 0;
+  margin-left: -17px;
+  font-size: 16px;
+  display:none;
+}
+
+#photos{
+  width:1000px;
+  height:1000px;
+}
+
+#photos .photo{
+  display: inline-block;
+  padding:5px;
+  vertical-align: top;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  margin: 5px;
+}
+#photos img{
+  width: 150px;
+}
+.photo .title{
+  font-size:15px;
+}
+/*sticker*/
+#upload_sticker_btn{
+  margin:5px;
+}
+
+#stickers img{
+  width:150px;
+  height:150px;
+}
+
+#stickers img:first-child{
+  margin-top:5px;
+}
+
+#stickers li{
+  width:150px;
+}
+
+.title{
+  background: cornflowerblue;
+  color: white;
+  padding: 2px;
+  margin-top: -6px;
+  margin-left: 0px;
+}
