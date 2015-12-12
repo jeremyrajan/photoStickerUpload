@@ -10,6 +10,13 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Demo
 Demo [here](http://jeremyrajan.com/photoStickerdemo/#/)
 
+## Dependencies
+* AngularJS
+* Materialize UI
+* JqueryUI
+* FontAwesome
+
+
 ##Features
 * Photo Upload using Data-URI & FileReader
 * Drag & Drop
